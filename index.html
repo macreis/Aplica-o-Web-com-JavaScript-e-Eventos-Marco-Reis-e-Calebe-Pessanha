@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Produtividade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Minhas Tarefas</h1>
+        <div class="input-container">
+            <input id="novaTarefa" type="text" placeholder="Digite uma nova tarefa" onkeypress="verificarEnter(event)">
+            <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
+        </div>
+        <ul id="listaTarefas"></ul>
+        <p id="contadorTarefas">Tarefas restantes: 0</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
